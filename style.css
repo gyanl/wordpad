@@ -1,0 +1,86 @@
+:root {
+    --WRD-10: #071225;
+    --WRD-20: #0C2145;
+    --WRD-30: #0E336A;
+    --WRD-40: #19428A;
+    --WRD-50: #13458F;
+    --WRD-60: #1651AA;
+    --WRD-70: #2461CA;
+    --WRD-80: #185ABD;
+    --WRD-90: #2E6AC5;
+    --WRD-100: #296FE6;
+    --WRD-110: #3D7CE8;
+    --WRD-120: #598FEC;
+    --WRD-130: #6794D7;
+    --WRD-140: #82ABF1;
+    --WRD-150: #AEC6EB;
+    --WRD-160: #D2E0F4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    padding: 10px;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    color: #808080;
+    background-color: #f0f0f0;
+    transition: .2s;
+    width: fit-content;
+}
+
+li.tab {
+    float: left;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+/* li.tab:hover {
+    background-color: #bbb;
+} */
+
+li.tab.active {
+    background-color: var(--WRD-80);
+    color: white;
+    border-radius: 16px;
+}
+
+#textCanvas {
+    width: 50%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 20vh;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    z-index: 0;
+    outline: none;
+}
+
+
+.shadow-8{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.14), 0px 0px 2px rgba(0, 0, 0, 0.12);
+}
