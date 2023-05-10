@@ -3,26 +3,103 @@
 <head>
     <title>Website with Tabs</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="FluentSystemIcons-Regular.css">
 </head>
 <body>
     <textarea id="textCanvas" rows="10" cols="50">
     </textarea>
+
+    <ul id="headerTabs">
+        <li class="tab active" id="home">Home</li>
+        <li class="tab" id="insert">Insert</li>
+        <li class="tab" id="draw">Draw</li>
+        <li class="tab" id="layout">Layout</li>
+        <li class="tab" id="review">Review</li>
+        <li class="tab" id="view">View</li>
+    </ul>
+
+
+
     <header class="shadow-8">
+
         <nav>
-            <ul id="headerTabs">
-                <li class="tab active" id="home">Home</li>
-                <li class="tab" id="insert">Insert</li>
-                <li class="tab" id="draw">Draw</li>
-                <li class="tab" id="layout">Layout</li>
-                <li class="tab" id="review">Review</li>
-                <li class="tab" id="view">View</li>
-            </ul>
+            <div topleft>
+                <i class="icon icon-ic_fluent_chevron_left_24_regular"></i>
+                <div class="docname">New Document</div>
+
+            </div>
+
+            <div topright>
+                <i class="icon icon-ic_fluent_phone_24_regular"></i>
+                <i class="icon icon-ic_fluent_lightbulb_24_regular"></i>
+                <i class="icon icon-ic_fluent_search_24_regular"></i>
+                <i class="icon icon-ic_fluent_share_24_regular"></i>
+                <i class="icon icon-ic_fluent_more_horizontal_24_regular"></i>
+            </div>
         </nav>
+
+        <div class="ribbon ribbon-home">
+
+            <i class="icon icon-ic_fluent_arrow_undo_24_regular"></i>
+            <i class="icon icon-ic_fluent_arrow_redo_24_regular"></i>
+
+            <div class="vertical-rule"></div>
+
+            <i class="icon icon-ic_fluent_paint_brush_24_regular"></i>
+
+            <div class="vertical-rule"></div>
+            
+            <select id="fontNameSelector">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+            <select id="fontSizeSelector">
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+                <option value="28">28</option>
+                <option value="32">32</option>
+                <option value="36">36</option>
+            </select>
+            
+            <i class="icon icon-ic_fluent_text_bold_24_regular"></i>
+            <i class="icon icon-ic_fluent_text_italic_24_regular"></i>
+            <i class="icon icon-ic_fluent_text_underline_24_regular"></i>
+
+            <div class="vertical-rule"></div>
+
+            <i class="icon icon-ic_fluent_highlight_24_regular"></i>
+            <i class="icon icon-ic_fluent_text_color_24_regular"></i>
+
+            <div class="vertical-rule"></div>
+
+            <i class="icon icon-ic_fluent_text_bullet_list_ltr_24_regular"></i>
+            <i class="icon icon-ic_fluent_text_number_list_ltr_24_regular"></i>
+
+            <i class="icon icon-ic_fluent_text_indent_increase_ltr_24_regular"></i>
+            <i class="icon icon-ic_fluent_text_indent_decrease_ltr_24_regular"></i>
+
+            <div class="vertical-rule"></div>
+
+
+        </div>
+
     </header>
-
-
-
 
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
