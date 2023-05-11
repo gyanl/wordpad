@@ -33,7 +33,7 @@
     </nav>
 
 
-    <div id="toolbar" class="toolbar" style="">
+    <div id="toolbar" class="toolbar">
 
       <div class="block">
         <a data-wysihtml-command="undo" href="javascript:;" unselectable="on">
@@ -150,17 +150,7 @@
         <a data-wysihtml-action="showSource">HTML</a>
       </div-->
 
-      <div class="block" data-wysihtml-hiddentools="table" style="display: none;">
-        <a data-wysihtml-command="mergeTableCells" href="javascript:;" unselectable="on">Merge</a>
-        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="above" href="javascript:;" unselectable="on">row-before</a>
-        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="below" href="javascript:;" unselectable="on">row-after</a>
-        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="before" href="javascript:;" unselectable="on">col-before</a>
-        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="after" href="javascript:;" unselectable="on">col-after</a>
-      
-        <a data-wysihtml-command="deleteTableCells" data-wysihtml-command-value="row" href="javascript:;" unselectable="on">delete row</a>
-        <a data-wysihtml-command="deleteTableCells" data-wysihtml-command-value="column" href="javascript:;" unselectable="on">delete col</a>
-      
-      </div>
+
 
     
       <div data-wysihtml-dialog="createLink" style="display: none;">
@@ -185,69 +175,84 @@
         </label>
         <a data-wysihtml-dialog-action="save">OK</a>&nbsp;<a data-wysihtml-dialog-action="cancel">Cancel</a>
       </div>
-    </div><!-- toolbar -->
+    <!-- </div>
 
-    <ul id="headerTabs">
+
+    <div id="toolbar-table" class="toolbar"> -->
+      <div class="block" data-wysihtml-hiddentools="table" style="display: none;">
+        <a data-wysihtml-command="mergeTableCells" href="javascript:;" unselectable="on">Merge</a>
+        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="above" href="javascript:;" unselectable="on">row-before</a>
+        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="below" href="javascript:;" unselectable="on">row-after</a>
+        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="before" href="javascript:;" unselectable="on">col-before</a>
+        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="after" href="javascript:;" unselectable="on">col-after</a>
+      
+        <a data-wysihtml-command="deleteTableCells" data-wysihtml-command-value="row" href="javascript:;" unselectable="on">delete row</a>
+        <a data-wysihtml-command="deleteTableCells" data-wysihtml-command-value="column" href="javascript:;" unselectable="on">delete col</a>
+      
+      </div>
+    </div>
+
+    <div class="ribbonTabsContainer">
+  <ul class="ribbonTabs" id="headerTabs">
       <li class="tab active" id="home">Home</li>
       <li class="tab" id="insert">Insert</li>
       <li class="tab" id="draw">Draw</li>
       <li class="tab" id="layout">Layout</li>
       <li class="tab" id="review">Review</li>
-      <li class="tab" id="view">View</li>
+      <li class="tab" id="view">View</li>  
   </ul>
 
-  </header>
+  <ul class="ribbonTabs" id="headerTable">
+    <li class="tab" id="view">Table</li>
+  </ul> 
+</div>
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+  </header>
 
 <div class="editable">
 
     
   <div id="editor" data-placeholder="Enter text ..." class="wysihtml-sandbox wysihtml-editor" contenteditable="true">
-      <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-      <p>Nullam egestas nisl augue, a fermentum quam laoreet at.</p>
-      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      <img alt="" class="wysiwyg-float-right">
-      <p>Pellentesque ullamcorper ultrices nibh mollis mattis. Etiam ac fermentum nisi. Sed sagittis porta augue, vel congue mi. Vivamus egestas vestibulum sem, a suscipit libero faucibus ut. Quisque mauris metus, imperdiet at velit a, suscipit fermentum ante. Nullam pretium mauris at risus eleifend ultrices. Vestibulum ullamcorper mattis est non lobortis. Donec consequat magna quis felis mollis tristique. Fusce sed congue felis.
-        Aenean ut nulla orci. Praesent id mollis massa. Fusce interdum eleifend bibendum. Nulla luctus nisl sit amet sapien sodales ornare. Duis blandit, purus eu egestas pretium, nisi augue aliquet quam, non suscipit diam velit eu enim. Suspendisse vulputate nibh et porta eleifend. Pellentesque rhoncus hendrerit quam. Ut sit amet ligula ac tortor porta ullamcorper.
-      </p>
 
-      <p>Nulla facilisi. Ut quis pellentesque nisi, eget convallis nisi. Fusce dapibus tortor sem, et blandit nunc porttitor eget. Etiam eu nulla id nibh aliquet semper ut ut lorem. Nullam dapibus massa interdum interdum vehicula. Sed ante urna, pulvinar ut lacinia hendrerit, tristique ut enim. Fusce euismod adipiscing justo, nec malesuada massa sodales a. Integer pulvinar sed ligula et consectetur. Curabitur pulvinar cursus venenatis. Morbi in justo eget ipsum rhoncus accumsan. Sed felis orci, sodales eget est sit amet, sollicitudin lacinia justo. Aliquam et eros faucibus, tincidunt leo at, feugiat eros. Duis malesuada laoreet lorem eu molestie. Nulla vestibulum tincidunt diam ut placerat.</p>
+      <h1>Introducing Cloudwalkers</h1>
 
-      <p>Aenean pretium diam nunc, at imperdiet elit vehicula a. Mauris nec felis non sem condimentum adipiscing ut et lacus. Donec facilisis facilisis lacinia. Nam posuere at nulla ut malesuada. Fusce ultricies lectus eu iaculis molestie. Ut consequat id magna et placerat. Nulla sed ante lectus. Donec congue, velit in ultricies tempus, felis lectus tempus sem, non bibendum lorem mi vel lorem. Mauris a placerat dui, nec auctor erat.</p>
+      <p>CloudWalkers are the cutting-edge hover shoes that completely revolutionize the concept of personal mobility. With a perfect fusion of advanced anti-gravity technology and high-fashion aesthetics, they elevate your daily commuting experience into a futuristic journey. Not only do they offer a uniquely smooth and comfortable mode of transport, but they also make a bold fashion statement, coming in a range of colors and styles to match any wardrobe.</p>
+      
+      <p>The practicality of CloudWalkers is further enhanced by their commitment to sustainability. By choosing to hover instead of drive, users significantly cut down on their carbon footprint, contributing to a greener future. This innovative form of transport not only eliminates the hassles of traditional commuting, such as traffic and overcrowded public transportation, but also helps in paving the way towards a more eco-friendly world.</p>
+      
+      <p>CloudWalkers also prioritize user safety. The patented anti-gravity technology generates a stable magnetic field that lets users hover just inches above the ground, reducing the risk of injuries. Furthermore, the shoes are designed to handle a variety of terrains, offering a safe and convenient commuting option that transcends the limitations of traditional footwear.</p>
+      
+      <p>Finally, CloudWalkers offer an unrivaled user experience. The sensation of gliding effortlessly above the ground is something truly magical, transforming mundane commutes into something extraordinary. With CloudWalkers, you're not just buying a pair of shoes, you're investing in a lifestyle change that will leave you feeling revitalized and looking forward to your daily commute.</p>
+      
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Technology</td>
+          <td>Advanced anti-gravity technology for smooth hovering</td>
+        </tr>
+        <tr>
+          <td>Design</td>
+          <td>High-fashion aesthetics with a variety of colors and styles</td>
+        </tr>
+        <tr>
+          <td>Sustainability</td>
+          <td>Reduces carbon footprint by offering an alternative to driving</td>
+        </tr>
+        <tr>
+          <td>Safety</td>
+          <td>Patented technology creates a stable hover, reducing risk of injuries</td>
+        </tr>
+        <tr>
+          <td>User Experience</td>
+          <td>Transforms mundane commutes into magical journeys</td>
+        </tr>
+      </table>
 
-      <p>Suspendisse id mauris vel urna venenatis pharetra. Pellentesque luctus et nulla in vulputate. Donec id ligula id enim congue convallis id eu nibh. Phasellus a leo non dui porta sodales ac vel justo. Etiam sed dignissim ligula. Morbi consequat adipiscing risus vitae accumsan. Curabitur dignissim nec quam non blandit. Etiam venenatis, est a facilisis convallis, mauris nibh ultricies sapien, eget egestas neque eros sed libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas et velit sit amet quam pulvinar accumsan. Donec id sollicitudin dolor.</p>
-   
-    <table>
-      <tbody><tr>
-        <th>This is </th><th>a table</th><th>that can be edited</th>
-      </tr>
-      <tr>
-        <td>4&nbsp;</td><td>
-          <table>
-            <tbody><tr>
-              <td>A nested table</td>
-              <td rowspan="2">with rowspan</td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-            </tr>
-          </tbody></table>
+      
 
-        </td><td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td>7&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-      </tr>
-    </tbody></table>
   </div>
 </div>
 
@@ -256,10 +261,10 @@
 
 <!-- <small>powered by <a href="https://github.com/Voog/wysihtml" target="_blank">wysihtml</a>.</small> -->
 
-<script src="./test_files/wysihtml.min.js"></script>
-<script src="./test_files/wysihtml.all-commands.min.js"></script>
-<script src="./test_files/wysihtml.table_editing.min.js"></script>
-<script src="./test_files/wysihtml.toolbar.min.js"></script>
+<script src="./test_files/wysihtml.js"></script>
+<script src="./test_files/wysihtml.all-commands.js"></script>
+<script src="./test_files/wysihtml.table_editing.js"></script>
+<script src="./test_files/wysihtml.toolbar.js"></script>
 
 <script src="./test_files/advanced_and_extended.js"></script>
 <script>
@@ -276,6 +281,8 @@
         event.target.classList.add('active');
     })
 })
+
+
   
 </script>
 </body></html>
