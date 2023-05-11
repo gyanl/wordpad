@@ -7,18 +7,18 @@ document.querySelectorAll('.tab').forEach(item => {
     })
 })
 
-document.getElementById("bold").addEventListener("click", function() {
-    var editor = document.getElementById("editor");
-    var selection = window.getSelection();
-    var range = selection.getRangeAt(0);
+// document.getElementById("bold").addEventListener("click", function() {
+//     var editor = document.getElementById("editor");
+//     var selection = editor.getSelection();
+//     var range = selection.getRangeAt(0);
 
-    var newNode = document.createElement("b");
-    newNode.appendChild(range.extractContents());
-    range.insertNode(newNode);
+//     var newNode = document.createElement("b");
+//     newNode.appendChild(range.extractContents());
+//     range.insertNode(newNode);
 
-    selection.removeAllRanges();
-    selection.addRange(range);
-  });
+//     selection.removeAllRanges();
+//     selection.addRange(range);
+//   });
 
 
 
