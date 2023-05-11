@@ -670,11 +670,38 @@
       this.editor.on("destroy:composer", this.destroy.bind(this));
 
       if (this.editor.config.handleTables) {
+
         editor.on("tableselect:composer", function() {
             that.container.querySelectorAll('[data-wysihtml-hiddentools="table"]')[0].style.display = "";
+            // Show Table Tab
+            document.getElementById("headerTable").classList.remove("displaynone");
+
+            // Deactivate All Tabs
+            document.querySelectorAll('.tab').forEach(item => {
+              item.classList.remove('active');
+            });
+
+            // Activate Table Tab
+
+            document.getElementById("table").classList.add("active");
+
+            // Hide Home Ribbon Items
+            document.getElementById("home-ribbon-items").classList.add("displaynone");
         });
+        
         editor.on("tableunselect:composer", function() {
             that.container.querySelectorAll('[data-wysihtml-hiddentools="table"]')[0].style.display = "none";
+            // Hide Table Tab
+            document.getElementById("headerTable").classList.add("displaynone");
+            // Deactivate All Tabs
+            document.querySelectorAll('.tab').forEach(item => {
+              item.classList.remove('active');
+            });
+            // Activate Home Tab
+            document.getElementById("home").classList.add("active");
+
+            // Show Home Ribbon Items
+            document.getElementById("home-ribbon-items").classList.remove("displaynone");
         });
       }
 

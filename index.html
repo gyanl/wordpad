@@ -34,6 +34,7 @@
 
 
     <div id="toolbar" class="toolbar">
+      <div id="home-ribbon-items" class="displayflex">
 
       <div class="block">
         <a data-wysihtml-command="undo" href="javascript:;" unselectable="on">
@@ -175,19 +176,33 @@
         </label>
         <a data-wysihtml-dialog-action="save">OK</a>&nbsp;<a data-wysihtml-dialog-action="cancel">Cancel</a>
       </div>
-    <!-- </div>
+    </div>
 
 
-    <div id="toolbar-table" class="toolbar"> -->
+    <div id="table-ribbon-items" class="displayflex">
       <div class="block" data-wysihtml-hiddentools="table" style="display: none;">
-        <a data-wysihtml-command="mergeTableCells" href="javascript:;" unselectable="on">Merge</a>
-        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="above" href="javascript:;" unselectable="on">row-before</a>
-        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="below" href="javascript:;" unselectable="on">row-after</a>
-        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="before" href="javascript:;" unselectable="on">col-before</a>
-        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="after" href="javascript:;" unselectable="on">col-after</a>
+        <a data-wysihtml-command="mergeTableCells" href="javascript:;" unselectable="on">
+          <i class="rbn-icon icon-ic_fluent_table_cells_merge_24_regular"></i><span class="rbn-icon-label">Merge</span>
+        </a>
+        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="above" href="javascript:;" unselectable="on">
+          <i class="rbn-icon icon-ic_fluent_table_stack_above_24_regular"></i><span class="rbn-icon-label">Row Above</span>
+        </a>
+        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="below" href="javascript:;" unselectable="on">
+        <i class="rbn-icon icon-ic_fluent_table_stack_below_24_regular"></i><span class="rbn-icon-label">Row Below</span>
+       </a>
+        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="before" href="javascript:;" unselectable="on">
+          <i class="rbn-icon icon-ic_fluent_table_stack_left_24_regular"></i><span class="rbn-icon-label">Column Before</span>
+        </a>
+        <a data-wysihtml-command="addTableCells" data-wysihtml-command-value="after" href="javascript:;" unselectable="on">
+          <i class="rbn-icon icon-ic_fluent_table_stack_right_24_regular"></i><span class="rbn-icon-label">Column After</span>
+        </a>
       
-        <a data-wysihtml-command="deleteTableCells" data-wysihtml-command-value="row" href="javascript:;" unselectable="on">delete row</a>
-        <a data-wysihtml-command="deleteTableCells" data-wysihtml-command-value="column" href="javascript:;" unselectable="on">delete col</a>
+        <a data-wysihtml-command="deleteTableCells" data-wysihtml-command-value="row" href="javascript:;" unselectable="on">
+          <i class="rbn-icon icon-ic_fluent_table_delete_row_24_regular"></i><span class="rbn-icon-label">Delete Row</span>
+        </a>
+        <a data-wysihtml-command="deleteTableCells" data-wysihtml-command-value="column" href="javascript:;" unselectable="on">
+          <i class="rbn-icon icon-ic_fluent_table_delete_column_24_regular"></i><span class="rbn-icon-label">Delete Column</span>
+        </a>
       
       </div>
     </div>
@@ -202,8 +217,8 @@
       <li class="tab" id="view">View</li>  
   </ul>
 
-  <ul class="ribbonTabs" id="headerTable">
-    <li class="tab" id="view">Table</li>
+  <ul class="ribbonTabs displaynone" id="headerTable">
+    <li class="tab" id="table">Table</li>
   </ul> 
 </div>
 
