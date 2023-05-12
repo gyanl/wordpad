@@ -272,7 +272,9 @@ document.getElementById('submitPrompt').addEventListener('click', getPrompt);
 async function getPromptResult(prompt) {
         const response = await fetch('https://acronym.gyanl.com/quickstart/' + prompt);
         const data = await response.json();
+        console.log(data);
         console.log(data.result);
+        console.log(data.result[0]);
         document.getElementById('editor').innerHTML = data.result;
   }
 
