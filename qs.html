@@ -229,14 +229,14 @@
     
   <div id="editor" data-placeholder="Every epic starts with a single word." class="wysihtml-sandbox wysihtml-editor" contenteditable="true">
 
-
   </div>
-  <span class="quickstart shadow-8">
+  <span class="quickstart">
     <i class="sparkle icon-ic_fluent_sparkle_24_regular"></i>
-    <p>Quickstarter</p>
+    <span class="qs-title">Quickstarter</span>
+    <p class="qs-body">What story do you want to tell? Copilot will get you started.</p>
     <input class="qs-promptbox" type="text" placeholder="What do you want to write about?">
-    <i class="displaynone sparkle icon-ic_fluent_send_24_regular"></i>
-    <input id="submitPrompt" type="submit">
+    <button id="submitPrompt"><i id="send" class="icon-ic_fluent_send_24_regular"></i><div id="thinking" class="displaynone lds-ripple"><div></div><div></div></div>
+    </button>
   </span>
 </div>
 
@@ -274,10 +274,19 @@ async function getPromptResult(prompt) {
         const data = await response.json();
         console.log(data);
         document.getElementById('editor').innerHTML += data;
+        document.getElementById('thinking').classList.add('displaynone');
+        document.getElementById('send').classList.remove('displaynone');
+
   }
 
 // fn getPrompt
 function getPrompt() {
+
+  // remove class displaynone from thinking
+  document.getElementById('thinking').classList.remove('displaynone');
+  document.getElementById('send').classList.add('displaynone');
+
+
   // get value of qs-promptbox
   var prompt = document.querySelector('.qs-promptbox').value;
   console.log("Trying to fetch " + prompt);
