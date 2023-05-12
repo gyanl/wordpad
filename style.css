@@ -32,7 +32,7 @@ body {
 header {
     background-color: #fff;
     position: fixed;
-    padding: 20px 20px 16px 20px;
+    padding: 20px 20px 14px 20px;
     z-index: 10;
     top: 0;
     left: 0;
@@ -179,7 +179,44 @@ li.tab.active {
     display: flex;
 }
 
+.quickstart{
+  border-radius: 12px;
+  padding: 20px;
+  background-color: var(--BG-4);
+  position: fixed;
+  bottom: 60px;
+  left: 25%;
+}
 
+.qs-promptbox{
+  background-color: #fff;
+  color: var(--FG-2);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  transition: .1s;
+  width: 300px;
+}
+
+.sparkle{
+  font-size: 1.5em;
+  padding: 12px 12px 8px 12px;
+  border-radius: 50%;
+  background-color: var(--WRD-160);
+  color: var(--WRD-90);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0), 0px 0px 2px rgba(0, 0, 0, 0);
+}
+
+
+i.sparkle:hover{
+  transform: scale(1.1);
+  transition: .2s;
+  color: #fff;
+  background-color: var(--WRD-90);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.14), 0px 0px 2px rgba(0, 0, 0, 0.12);
+}
 
 
 /* WYSIWYHTML */
