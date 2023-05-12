@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
 
-<title>Quickstarter</title>
+<title>New Doc</title>
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" type="text/css" href="FluentSystemIcons-Regular.css">
@@ -227,17 +227,58 @@
 <div class="editable">
 
     
-  <div id="editor" data-placeholder="Start typing..." class="wysihtml-sandbox wysihtml-editor" contenteditable="true">
+  <div id="editor" data-placeholder="Enter text ..." class="wysihtml-sandbox wysihtml-editor" contenteditable="true">
+
+      <h1>Introducing Cloudwalkers</h1>
+
+      <p>CloudWalkers are the cutting-edge hover shoes that completely revolutionize the concept of personal mobility. With a perfect fusion of advanced anti-gravity technology and high-fashion aesthetics, they elevate your daily commuting experience into a futuristic journey. Not only do they offer a uniquely smooth and comfortable mode of transport, but they also make a bold fashion statement, coming in a range of colors and styles to match any wardrobe.</p>
+      
+      <p>The practicality of CloudWalkers is further enhanced by their commitment to sustainability. By choosing to hover instead of drive, users significantly cut down on their carbon footprint, contributing to a greener future. This innovative form of transport not only eliminates the hassles of traditional commuting, such as traffic and overcrowded public transportation, but also helps in paving the way towards a more eco-friendly world.</p>
+      
+      <p>CloudWalkers also prioritize user safety. The patented anti-gravity technology generates a stable magnetic field that lets users hover just inches above the ground, reducing the risk of injuries. Furthermore, the shoes are designed to handle a variety of terrains, offering a safe and convenient commuting option that transcends the limitations of traditional footwear.</p>
+            
+      <table>
+        <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Quantity Sold</th>
+        </tr>
+        <tr>
+            <td>Nike</td>
+            <td>Air Max</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>Adidas</td>
+            <td>Ultraboost</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>Puma</td>
+            <td>Suede Classic</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>New Balance</td>
+            <td>990v5</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td>Reebok</td>
+            <td>Classic Leather</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Vans</td>
+            <td>Old Skool</td>
+            <td>120</td>
+        </tr>
+    </table>
+
+    <p>Finally, CloudWalkers offer an unrivaled user experience. The sensation of gliding effortlessly above the ground is something truly magical, transforming mundane commutes into something extraordinary. With CloudWalkers, you're not just buying a pair of shoes, you're investing in a lifestyle change that will leave you feeling revitalized and looking forward to your daily commute.</p>
+
 
   </div>
-  <span class="quickstart">
-    <i class="sparkle icon-ic_fluent_sparkle_24_regular"></i>
-    <span class="qs-title">Quickstarter</span>
-    <p class="qs-body">What do you want to write about? Copilot will get you started.</p>
-    <input class="qs-promptbox" type="text" placeholder="What do you want to write about?">
-    <button id="submitPrompt"><i id="send" class="icon-ic_fluent_send_24_regular"></i><div id="thinking" class="displaynone lds-ripple"><div></div><div></div></div>
-    </button>
-  </span>
 </div>
 
 <!-- <h2>Events:</h2>
@@ -266,33 +307,7 @@
     })
 })
 
-// on clicking submitPrompt, execute function getPrompt
-document.getElementById('submitPrompt').addEventListener('click', getPrompt);
 
-async function getPromptResult(prompt) {
-        const response = await fetch('https://acronym.gyanl.com/quickstart/' + prompt);
-        const data = await response.json();
-        console.log(data);
-        document.getElementById('editor').innerHTML += data;
-        document.getElementById('thinking').classList.add('displaynone');
-        document.getElementById('send').classList.remove('displaynone');
-
-  }
-
-// fn getPrompt
-function getPrompt() {
-
-  // remove class displaynone from thinking
-  document.getElementById('thinking').classList.remove('displaynone');
-  document.getElementById('send').classList.add('displaynone');
-
-
-  // get value of qs-promptbox
-  var prompt = document.querySelector('.qs-promptbox').value;
-  console.log("Trying to fetch " + prompt);
-        // function to fetch result from openai api
-        getPromptResult(prompt);
-}
   
 </script>
 </body></html>
